@@ -1,0 +1,2 @@
+コンパイル：./node_modules/.bin/tsc
+実行：node ./dist/[ファイル名]
