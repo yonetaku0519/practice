@@ -1,10 +1,14 @@
 "use strict";
-let a = 1 + 2;
-let b = a + 3;
 let c = {
-    apple: a,
-    banana: b
+    firstName: 'john',
+    lastName: 'barrowman'
 };
-let d = c.apple * 4;
-console.log(d);
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
+c = new Person('matt', 'smith');
+console.log(c.firstName);
 //# sourceMappingURL=index.js.map
