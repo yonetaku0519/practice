@@ -1,17 +1,14 @@
-let c : {
-    firstName: string
-    lastName:string
-} = {
-    firstName: 'john',
-    lastName: 'barrowman'
+let a: {
+    b: number
+    c?: string
+    [key: number]: boolean
 }
 
-class Person {
-    constructor(
-        public firstName: string,
-        public lastName: string
-    ) {}
-}
-
-c = new Person('matt','smith')
-console.log(c.firstName)
+a = {b: 1}
+console.log(a)
+a = {b: 1, c:undefined}
+console.log(a)
+a = {b: 1,c:'d'}
+console.log(a)
+a = {b: 1,10: true, 20: false}
+console.log(a)
