@@ -7,3 +7,4 @@ TypeScriptのリハビリ
 11月21日：YouTubeを使用して学習 + Chart.jsの準備
 11月22日：YouTubeを使用して学習
 11月23日：YouTubeを使用して学習
+11月27日：YouTubeを使用して学習
