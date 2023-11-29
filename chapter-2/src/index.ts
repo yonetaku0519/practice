@@ -1,14 +1,25 @@
-let a: {
-    b: number
-    c?: string
-    [key: number]: boolean
-}
+// number
+let a = 1042
 
-a = {b: 1}
-console.log(a)
-a = {b: 1, c:undefined}
-console.log(a)
-a = {b: 1,c:'d'}
-console.log(a)
-a = {b: 1,10: true, 20: false}
-console.log(a)
+// string
+let b = 'apple and orange'
+
+// 文字列リテラル型
+const c = 'pineapples'
+
+// boolean[]
+let d = [true, true, false]
+
+// {
+//     type: string;
+// }
+let e = {type: 'ficus'}
+
+// (number | boolean)[]
+let f = [1, false]
+
+// number[]
+const g = [3]
+
+// any
+let h = null
