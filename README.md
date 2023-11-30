@@ -8,3 +8,4 @@ TypeScriptのリハビリ
 11月22日：YouTubeを使用して学習
 11月23日：YouTubeを使用して学習
 11月27日：YouTubeを使用して学習
+11月30日：YouTubeを使用して学習
