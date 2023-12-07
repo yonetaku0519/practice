@@ -1,20 +1,9 @@
 "use strict";
-// number
-let a = 1042;
-// string
-let b = 'apple and orange';
-// 文字列リテラル型
-const c = 'pineapples';
-// boolean[]
-let d = [true, true, false];
-// {
-//     type: string;
-// }
-let e = { type: 'ficus' };
-// (number | boolean)[]
-let f = [1, false];
-// number[]
-const g = [3];
-// any
-let h = null;
+function log(message, userId) {
+    let time = new Date().toLocaleTimeString();
+    console.log(time, message, userId || 'Not signed in');
+}
+log('User signed in', 'A0001');
+// 第二引数を使用しない
+log('Page loaded');
 //# sourceMappingURL=index.js.map
