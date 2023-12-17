@@ -1,14 +1,17 @@
-let x = {
-    a() {
-        return this
+function* createFibonacciGenerator() {
+    let a = 0
+    let b = 1
+    while(true) {
+        yield a;
+        [a, b] = [b, a + b]
     }
 }
 
-// { a: [Function: a] }が出力される
-console.log(x.a())
 
-// aを再割り当てし、呼び出すと結果が変わる
-// undefinedが出力される
-let a = x.a
-console.log(a())
-
+let fibonacciGenerator = createFibonacciGenerator()
+console.log(fibonacciGenerator.next())
+console.log(fibonacciGenerator.next())
+console.log(fibonacciGenerator.next())
+console.log(fibonacciGenerator.next())
+console.log(fibonacciGenerator.next())
+console.log(fibonacciGenerator.next())
