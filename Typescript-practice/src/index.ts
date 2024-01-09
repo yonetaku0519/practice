@@ -1,17 +1,7 @@
-function* createFibonacciGenerator() {
-    let a = 0
-    let b = 1
-    while(true) {
-        yield a;
-        [a, b] = [b, a + b]
+function map<T, U>(array: T[], f: (item: T) => U): U[] {
+    let result = []
+    for(let i = 0; i < array.length; i++) {
+        result[i] = f(array[i])
     }
+    return result
 }
-
-
-let fibonacciGenerator = createFibonacciGenerator()
-console.log(fibonacciGenerator.next())
-console.log(fibonacciGenerator.next())
-console.log(fibonacciGenerator.next())
-console.log(fibonacciGenerator.next())
-console.log(fibonacciGenerator.next())
-console.log(fibonacciGenerator.next())

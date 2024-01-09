@@ -1,17 +1,9 @@
 "use strict";
-function* createFibonacciGenerator() {
-    let a = 0;
-    let b = 1;
-    while (true) {
-        yield a;
-        [a, b] = [b, a + b];
+function map(array, f) {
+    let result = [];
+    for (let i = 0; i < array.length; i++) {
+        result[i] = f(array[i]);
     }
+    return result;
 }
-let fibonacciGenerator = createFibonacciGenerator();
-console.log(fibonacciGenerator.next());
-console.log(fibonacciGenerator.next());
-console.log(fibonacciGenerator.next());
-console.log(fibonacciGenerator.next());
-console.log(fibonacciGenerator.next());
-console.log(fibonacciGenerator.next());
 //# sourceMappingURL=index.js.map
